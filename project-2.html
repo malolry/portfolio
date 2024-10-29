@@ -17,33 +17,32 @@
     />
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
+              src="./assets/jpeg/pic_malo.jpg"
               alt="Ram Maheshwari Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Malo LEROY</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
+              <a href="./index.html" class="header__link">Home</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
+              <a href="./index.html#about" class="header__link">About</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
+              <a href="./index.html#projects" class="header__link">Projects</a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
+              <a href="./index.html#contact" class="header__link">Contact</a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -64,105 +63,101 @@
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+              <a href="./index.html">Home</a>
             </li>
-
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+              <a href="./index.html#about">About</a>
             </li>
-
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+              <a href="./index.html#projects">Projects</a>
             </li>
-
             <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+              <a href="./index.html#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 2</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
-          </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
-      </div>
-    </section>
+
+    <!-- Project Details Section -->
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
+            <!-- Ajout du Titre au-dessus de l'Image -->
+            <h3 class="project-details__image-title">Technical Lead - Loyalty System for Small Businesses (Startup Project)</h3>
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
+              src="./assets/project2/primary_image.png"
               alt="Project Image"
               class="project-details__showcase-img"
             />
           </div>
           <div class="project-details__content-main">
+          <div class="project-details__section-header">
+            <h3 class="project-details__content-title">Project Overview</h3>
+          </div>
             <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                As I enjoy learning new concepts, I often challenge myself with new projects. 
+                In this case, I took on the role of a Data Science consultant for a Parisian hotel. 
+                My objective was to develop and implement a protocol to address the hotel's hypothetical challenge: improving its rating on Booking.com.
               </p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                First of all, I developed a Python algorithm using Selenium library to scrape the entire hotel's reviews from Booking.com (find the script on my GitHub). 
+                I obtained a dataset composed of 6 features: title, country, score, positive part, negative part, and date.
+                I prefered to keep the reviews anonymous to avoid biais and unuseful information.
+              </p>
+              <p class="project-details__desc-para">
+                Then, I used Natural Language Processing (NLP) to keep only the relevant information from the reviews 
+                so that I can analyze them and provide insights : 
+              </p>
+              <ul class="project-details__desc-list">
+                <li>Formatting of the date and score columns</li>
+                <li>Translating the "Negative part" column into English (the only column used to derive insights, as we are focusing on identifying issues in the hotel)</li>
+                <li>Removing stop words, performing lemmatization, and tokenizing words</li>
+              </ul>
+              <p class="project-details__desc-para">
+                <br>
+                Now that the data is clean, I compiled a list of the most common words in the negative reviews: "room," "small," "bathroom," and "little." 
+                These terms suggest that the hotel's infrastructure is perceived as too cramped. However, I cannot advise the hotel manager to enlarge the 
+                rooms by removing walls. Fortunately, there are numerous architectural techniques that can create the illusion of larger spaces, particularly 
+                through the use of color schemes and the strategic selection of wall coverings.
+              </p>
+              <p class="project-details__desc-para">
+                I particularly enjoyed working on this project as it allowed me to apply my skills in data science and natural language processing. 
+                There is still much to explore, and the project could be further developed in various ways to extract even more relevant and useful insights 
+                for the hotel. It could also be scaled to other hotels or even other industries.
               </p>
             </div>
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <!-- Flex Container for Title and GitHub Button -->
+              <div class="project-details__section-header">
+                <h3 class="project-details__content-title">Tools Used</h3>
+              </div>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">AWS</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">React Native JS</div>
+                <div class="skills__skill">Python</div>
                 <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
               </div>
             </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
+
+            <!-- Nouvelle Section pour le PDF -->
+            <div class="project-details__pdf-section">
+              <h3 class="project-details__content-title">Documentation</h3>
+              <iframe src="./assets/project3/nlp_analysis.pdf" width="100%" height="600px">
+                <p>Your browser does not support PDFs.
+                  <a href="./assets/project3/nlp_analysis.pdf">Download the PDF</a>.</p>
+              </iframe>                
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer Section -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -171,60 +166,53 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/malo-leroy/"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="LinkedIn"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/malolry"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
-                  alt="icon"
+                  alt="GitHub"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
+              <!-- New Email Link as Text -->
+              <a href="mailto:malo.leroy09@gmail.com" class="main-footer__social-text-link">
+                Email: malo.leroy09@gmail.com
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
+              <!-- New Telephone Link as Text -->
+              <a href="tel:+33781546408" class="main-footer__social-text-link">
+                Tel: +33 7 81 54 64 08
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm animated-name">Malo Leroy</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Thank's for reading, please feel free to contact me any time! 
+              Can't wait to collaborate with you :)
             </p>
           </div>
         </div>
 
+        <!-- Lower Footer (Credit Section) -->
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
         </div>
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>
